@@ -1,0 +1,95 @@
+.header{
+    height:6rem;
+    color:$color-maroon;
+    border:solid .1rem $color-maroon;
+ &_sub-left{
+    color:$color-maroon;
+    float:left;
+    font-weight: 10rem;
+    font-size: 3rem;
+    padding:1rem;
+    padding-left: 2rem;
+    text-align: center;
+    }
+ &_sub-right{
+    float: right;
+    padding-top: 2rem;
+        li{
+            list-style: none;
+        }
+        a{
+            color:$color-maroon;
+            text-decoration: none;
+        }
+    }
+&_layout{
+        padding:2rem;
+        text-transform: uppercase;
+        font-size: medium;
+        
+    }        
+}
+.cover-pg{
+    background-image: linear-gradient(rgba($color-maroon,.7),rgba($color-maroon,.9)), url(../img/scenery6.jpg);
+    color:$color-cream;
+    display:block;
+   /* background-blend-mode: screen;*/
+    background-size: cover;
+    height:100vh;
+    clip-path: polygon(0 0,100% 0,100% 80%,0% 100%);
+    position: relative;
+    &_main{
+        font-family: 'Bangers' ;
+        font-weight: 300;
+        font-size: 6rem;
+        clear: both;
+        position: absolute;
+        top:9rem;
+        left:7rem;
+        backface-visibility: hidden;
+        animation: moveInLeft 1s ease-out;
+    }
+    &_sub1{
+        color:$color-white;
+        font-family: 'Bangers';
+        font-weight: 200;
+        font-size: 3rem;
+        clear: both;
+        position: absolute;
+        top:16rem;
+        left:7rem;
+        backface-visibility: hidden;
+        animation: moveInRight 1s ease-out;
+    }
+    &_sub2{
+        font-family: 'Bangers';
+        font-weight: 200;
+        font-size: 3rem;
+        clear: both;
+        position: absolute;
+        top:20rem;
+        left:7rem;
+        backface-visibility: hidden;
+        animation: moveInLeft 1s ease-out;
+    }
+    &_sub3{
+        color:$color-white;
+        font-family: 'Bangers';
+        font-weight: 200;
+        font-size: 3rem;
+        clear: both;
+        position: absolute;
+        top:24rem;
+        left:7rem;
+        backface-visibility: hidden;
+        animation: moveInRight 1s ease-out;
+    }
+    &_text-box{
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+}
+

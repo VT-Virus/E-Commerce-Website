@@ -1,0 +1,39 @@
+.row{
+    max-width: $grid-width;
+    
+    margin:0 auto;
+    display: block;
+
+    &:not(:last-child){
+        margin-bottom: $gutter-vertical;
+    }
+    .col-1-of-2{
+        width:47.5%;
+        float:left;
+    }
+    .space_1{
+        margin-right: 5%;
+    }
+    .col-1-of-3{
+        width:25%;
+        float:left;
+    }
+    .space_3{
+        margin-left: 6.25%;
+        &:last-child{
+            margin-right:6.25% ;
+        }
+    }
+    .col-1-of-4{
+        width:17.5%;
+        float:left;
+    }
+    .space_2{
+        margin-right: 10%;
+    }
+  
+    @include clearfix;
+
+
+
+}

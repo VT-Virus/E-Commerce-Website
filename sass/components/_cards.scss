@@ -1,0 +1,81 @@
+.cards{
+  perspective:158rem;
+  -moz-perspective: 158rem;
+  height: 45rem;
+  border-radius: 5px;
+  position: relative;
+    &_side{
+      height:45rem;
+      color:black;
+      font-size: 1.6rem;
+      transition: all .8s;
+      position: absolute;
+      top:0;
+      left: 0;
+      width:100%;
+      backface-visibility: hidden;
+         &_front{
+           background-color: $color-crimson;
+         }
+         &_back{
+           background-color:rgba($color-coral,1);
+           transform: rotateY(180deg);
+         }
+    }
+    &:hover &_side_front{
+      transform: rotateY(-180deg);
+    }
+    &:hover &_side_back{
+      transform: rotateY(0);
+    }
+    &_picture{
+      background-size: cover;
+      height:20rem;
+      
+      &_1{
+        background-image: url(../img/combo_9.jfif);
+      }
+      &_2{
+        background-image: url(../img/combo_19.jpeg);
+      }
+      &_3{
+        background-image: url(../img/combo_14.jpg);
+      }
+    }
+    &_details{
+      ul{
+        list-style: none;
+        width:80%;
+        margin:0 auto;
+        margin-top: 5rem;
+        li{
+          color:white;
+          text-align: center;
+          padding:1rem;
+          &:not(:last-child){
+          border-bottom: solid 1px black;
+          }
+        }
+      }
+    }
+    &_cta{
+     position:absolute;
+     top:50%;
+     left:50%;
+     transform:translate(-50%,-50%) ;
+    }
+    &_pricebox{
+     text-align: center;
+    color:white;
+    }
+    &_price-only{
+      font-size: medium;
+      text-transform: uppercase;
+    }
+    &_price-value{
+      font-size: 5rem;
+      font-weight: 700;
+      margin-bottom: 5rem;
+    }
+    
+}

@@ -1,0 +1,32 @@
+.composition{
+    position: relative;
+    &_pic{
+        border-radius: 2px;
+        box-shadow: 0 1.5rem 4rem rgba($color-black,.4);
+        position: absolute;
+        z-index: 10;
+        transition: all .4s;
+        outline-offset: 2rem;
+        &_1{
+            top:-4rem;
+            left:0;
+        }
+        &_2{
+            top:.3rem;
+            right:0;
+        }
+        &_3{
+            left:20%;
+            top:5rem;
+        }
+        &:hover{
+            box-shadow: 0 2.5rem 4rem rgba($color-black,.4);
+            transform: scale(1.1);
+            z-index: 20;
+            outline:1rem solid rgba($color-maroon,1);
+        }
+    }
+   &:hover &_pic:not(:hover){
+        transform: scale(0.9);
+    }
+}
